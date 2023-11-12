@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.182" height="22.182" viewBox="0 0 22.182 22.182">
+  <g id="Group_19270" data-name="Group 19270" transform="translate(-17.314 -210.818)">
+    <g id="microphone" transform="translate(17.314 210.818)">
+      <path id="Path_2431" data-name="Path 2431" d="M0,0H22.182V22.182H0Z" fill="rgba(0,0,0,0)"/>
+      <path id="Path_2432" data-name="Path 2432" d="M9,2,9,4.773A2.773,2.773,0,0,1,11.773,2h0a2.773,2.773,0,0,1,2.773,2.773V9.394a2.773,2.773,0,0,1-2.773,2.773h0A2.773,2.773,0,0,1,9,9.394Z" transform="translate(-0.682 -0.151)" fill="rgba(0,0,0,0)" stroke="#a1a2a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_2433" data-name="Path 2433" d="M5,10a6.47,6.47,0,1,0,12.94,0" transform="translate(-0.379 -0.757)" fill="rgba(0,0,0,0)" stroke="#a1a2a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_2434" data-name="Path 2434" d="M8,21h7.394" transform="translate(-0.606 -1.59)" fill="rgba(0,0,0,0)" stroke="#a1a2a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_2435" data-name="Path 2435" d="M12,17v3.7" transform="translate(-0.909 -1.287)" fill="rgba(0,0,0,0)" stroke="#a1a2a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
