@@ -4,8 +4,9 @@ import SamplePage from '../Components/Pages/PageLayout/SimplePage';
 // Team members
 import ListMembers from "../Components/Members/ListMembers";
 import AddTeamMember from "../Components/Members/AddTeamMember";
-import EditMember from "../Components/Members/EditMember"
-import TeamGroupPage from "../Components/Members/TeamGroupPage"
+import EditMember from "../Components/Members/EditMember";
+import TeamGroupPage from "../Components/Members/TeamGroup";
+import SearchMemberPage from "../Components/Members/SearchMember";
 
 export const routes = [
   // //page
@@ -16,5 +17,6 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/member/add/:layout`, Component: <AddTeamMember /> },
   { path: `${process.env.PUBLIC_URL}/member/edit/:userId`, Component: <EditMember /> },
   { path: `${process.env.PUBLIC_URL}/members-groups/:layout`, Component: <TeamGroupPage /> },
+  { path: `${process.env.PUBLIC_URL}/search-members/:layout`, Component: <SearchMemberPage /> },
   
 ];

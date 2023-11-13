@@ -58,3 +58,26 @@ hr {
 .custom-text-tg p {
   text-align: right;
 }
+
+/* Search Team */
+.search-team-page {
+  color: white;
+  width: 42%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-search-member-input {
+  background-color: #1D1E26;
+  border: 0;
+}
+
+.custom-search-member-input::placeholder {
+  color: white;
+}
+
+.custom-search-member-input:focus {
+  color: #1D1E26;
+  color: white;
+}
