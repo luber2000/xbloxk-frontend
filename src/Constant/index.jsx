@@ -1,3 +1,7 @@
+export const AddTeamMember = "Add team member"
+export const NewTeamMember = "New team member"
+export const PasswordConfirmation = "Password Confirmation"
+
 export const Dashboard = 'Dashboard';
 export const Widgets = 'Widgets';
 export const Summary = 'Summary';
