@@ -34,7 +34,7 @@ export const MENUITEMS = [
         icon: "home",
         type: "link",
         active: false,
-        path : `${process.env.PUBLIC_URL}/members`
+        path : `${process.env.PUBLIC_URL}/members-groups`
       },
       {
         title: "Tasks",
