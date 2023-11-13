@@ -1,34 +1,58 @@
 export const MENUITEMS = [
   {
-    menutitle: 'General',
-    menucontent: 'Dashboards,Widgets',
-    Items: [
-      {
-        title: 'Pages',
-        icon: 'sample-page',
-        type: 'sub',
-        children: [
-          {
-            active: false,
-            path: `${process.env.PUBLIC_URL}/pages/sample-page`,
-            title: 'Sample-Page',
-            type: 'link',
-          },
-        ],
-      },
-      {
-        title: 'Support Ticket',
-        icon: 'support-tickets',
-        type: 'sub',
-        children: [
-          {
-            active: false,
-            path: `http://support.pixelstrap.com/help-center`,
-            title: 'Rise Ticket',
-            type: 'link',
-          },
-        ],
-      },
-    ],
+    title: "Lobby",
+    icon: "lobby",
+    type: "link",
+    active: false,
+    path : `${process.env.PUBLIC_URL}/dashboard/default`
   },
+  {
+    title: "Meeting",
+    icon: "meeting",
+    type: "link",
+    active: false,
+    path : `${process.env.PUBLIC_URL}/app/team`
+  },
+  {
+    title: "Analytics",
+    icon: "analytics",
+    type: "link",
+    active: false,
+    path : `${process.env.PUBLIC_URL}/app/team`
+  },
+  {
+    title: "Blocks",
+    icon: "blocks",
+    type: "link",
+    active: false,
+    path : `${process.env.PUBLIC_URL}/app/team`
+  },
+  {
+    title: "Team",
+    icon: "team",
+    type: "link",
+    active: false,
+    path : `${process.env.PUBLIC_URL}/app/team`
+  },
+  {
+    title: "Tasks",
+    icon: "tasks",
+    type: "link",
+    active: false,
+    path : `${process.env.PUBLIC_URL}/app/team`
+  },
+  {
+    title: "Block Board",
+    icon: "block-board",
+    type: "link",
+    active: false,
+    path : `${process.env.PUBLIC_URL}/app/team`
+  },
+  {
+    title: "",
+    icon: "plus",
+    type: "link",
+    active: false,
+    path : `${process.env.PUBLIC_URL}/app/team`
+  }
 ];

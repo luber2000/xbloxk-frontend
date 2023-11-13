@@ -81,15 +81,15 @@ const Sidebar = (props) => {
           Items.active = false;
           document.querySelector('.bg-overlay1').classList.remove('active');
         }
-        if (Items.children && Items.children.includes(item)) {
-          Items.active = true;
-          document.querySelector('.sidebar-links').classList.add('active');
-        }
-        if (Items.children) {
-          Items.children.filter((submenuItems) => {
-            if (submenuItems.children && submenuItems.children.includes(item)) {
-              Items.active = true;
-              submenuItems.active = true;
+    });
+  
+    const currentItem = MENUITEMS.find((menuItems) => menuItems === item);
+  
+    if (currentItem) {
+      currentItem.active = true;
+      if (currentItem.children) {
+        currentItem.children.forEach((submenuItems) => {
+          submenuItems.active = true;
               return true;
             } else {
               return false;
