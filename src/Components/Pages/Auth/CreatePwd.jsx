@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Col, Container, Form, FormGroup, Input, Label, Row } from 'reactstrap';
 import { Btn, H4, P, Image } from '../../../AbstractElements';
 import logoWhite from '../../../assets/images/logo/logo.png';
-import logoDark from '../../../assets/images/logo/logo_dark.png';
+import logoDark from '../../../assets/images/logo/logo-dark.png';
 
 const CreatePwd = ({ logoClassMain }) => {
   const [togglePassword, setTogglePassword] = useState(false);

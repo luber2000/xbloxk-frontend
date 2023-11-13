@@ -37736,7 +37736,8 @@ ul.dot-group li {
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links li a span {
   letter-spacing: 0.7px;
   text-transform: capitalize;
-  color: rgba(82, 82, 108, 0.8);
+  /* color: rgba(82, 82, 108, 0.8); */
+  color: white;
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links li a.link-nav .according-menu {
   display: none;

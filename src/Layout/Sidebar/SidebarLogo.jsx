@@ -6,25 +6,23 @@ import CubaIcon from '../../assets/images/logo/logo.png';
 import CustomizerContext from '../../_helper/Customizer';
 
 const SidebarLogo = () => {
-  const { mixLayout, toggleSidebar, layout, layoutURL } = useContext(CustomizerContext);
-  const [toggle, setToggle] = useState(false);
+  const { mixLayout, toggleSidebar, toggleIcon, layout, layoutURL } = useContext(CustomizerContext);
 
   const openCloseSidebar = () => {
-    setToggle(!toggle);
-    toggleSidebar(toggle);
+    toggleSidebar(!toggleIcon);
   };
 
-  const layout1 = localStorage.getItem('sidebar_layout') || layout;
+  const layout1 = localStorage.getItem("sidebar_layout") || layout;
 
   return (
     <div className='logo-wrapper'>
       {layout1 !== 'compact-wrapper dark-sidebar' && layout1 !== 'compact-wrapper color-sidebar' && mixLayout ? (
-        <Link to={`${process.env.PUBLIC_URL}/pages/sample-page/${layoutURL}`}>
+        <Link to={`${process.env.PUBLIC_URL}/dashboard/default/${layoutURL}`}>
           <Image attrImage={{ className: 'img-fluid d-inline', src: `${CubaIcon}`, alt: '' }} />
         </Link>
       ) : (
-        <Link to={`${process.env.PUBLIC_URL}/pages/sample-page/${layoutURL}`}>
-          <Image attrImage={{ className: 'img-fluid d-inline', src: `${require('../../assets/images/logo/logo_dark.png')}`, alt: '' }} />
+        <Link to={`${process.env.PUBLIC_URL}/dashboard/default/${layoutURL}`}>
+          <Image attrImage={{ className: 'img-fluid d-inline', src: `${require('../../assets/images/logo/logo-dark.png')}`, alt: '' }} />
         </Link>
       )}
       <div className='back-btn' onClick={() => openCloseSidebar()}>

@@ -3,7 +3,7 @@ import { Col, Container, Form, FormGroup, Input, Label, Row } from 'reactstrap';
 import { Btn, H4, P, Image } from '../../../AbstractElements';
 import { Link } from 'react-router-dom';
 import logoWhite from '../../../assets/images/logo/logo.png';
-import logoDark from '../../../assets/images/logo/logo_dark.png';
+import logoDark from '../../../assets/images/logo/logo-dark.png';
 
 const UnlockUser = ({ logoClassMain }) => {
   const [togglePassword, setTogglePassword] = useState(false);

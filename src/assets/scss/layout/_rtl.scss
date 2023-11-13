@@ -2,14 +2,14 @@
     60. RTL CSS Start
 ==========================**/
 
-html[dir='rtl'] {
+html[dir="rtl"] {
   ul {
     padding-right: 0;
   }
   .location-checkbox span {
     padding-left: 0;
     padding-right: 33px;
-}
+  }
   .border-end {
     border-left: 1px solid var(--chart-border) !important;
     border-right: initial !important;
@@ -695,7 +695,7 @@ html[dir='rtl'] {
     }
   }
   // index page css end
-  @each $progress-gradient-name, $progress-gradient-color in (primary, var(--theme-deafult)), (secondary, $secondary-color), (success, $success-color), (danger, $danger-color), (info, $info-color), (light, $light-color), (dark, $dark-color), (warning, $warning-color) {
+  @each $progress-gradient-name, $progress-gradient-color in (primary, var(--theme-default)), (secondary, $secondary-color), (success, $success-color), (danger, $danger-color), (info, $info-color), (light, $light-color), (dark, $dark-color), (warning, $warning-color) {
     .progress-gradient-#{$progress-gradient-name} {
       background-image: linear-gradient(to right, $progress-gradient-color, $transparent-color);
       &::after {
@@ -1345,8 +1345,8 @@ html[dir='rtl'] {
       }
     }
   }
-  code[class*='language-'],
-  pre[class*='language-'] {
+  code[class*="language-"],
+  pre[class*="language-"] {
     text-align: right;
   }
   .input-group-prepend {
@@ -1898,8 +1898,8 @@ html[dir='rtl'] {
         }
       }
       &.style-1 {
-        button[aria-expanded='true'],
-        button[aria-expanded='false'] {
+        button[aria-expanded="true"],
+        button[aria-expanded="false"] {
           &:before {
             right: unset;
             left: 20px;
@@ -2838,7 +2838,7 @@ html[dir='rtl'] {
   // datatables page
   .dataTables_wrapper {
     .dataTables_filter {
-      input[type='search'] {
+      input[type="search"] {
         margin-right: 10px;
         margin-left: 0;
       }
@@ -2930,11 +2930,11 @@ html[dir='rtl'] {
         &.dataTables_wrapper {
           & > div {
             &.row {
-              & > div[class^='col-']:first-child {
+              & > div[class^="col-"]:first-child {
                 padding-right: 0;
                 padding-left: 0;
               }
-              & > div[class^='col-']:last-child {
+              & > div[class^="col-"]:last-child {
                 padding-right: 0;
                 padding-left: 0;
               }
@@ -3228,13 +3228,13 @@ html[dir='rtl'] {
   }
   .navs-icon.default-according.style-1 {
     li {
-      button[aria-expanded='true'] {
+      button[aria-expanded="true"] {
         &:before {
           left: 2px;
           right: unset;
         }
       }
-      button[aria-expanded='false']:before {
+      button[aria-expanded="false"]:before {
         left: 2px;
         right: unset;
       }

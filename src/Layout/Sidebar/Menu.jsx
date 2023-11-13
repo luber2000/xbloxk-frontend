@@ -1,56 +1,49 @@
 export const MENUITEMS = [
   {
     title: "Lobby",
-    icon: "lobby",
+    icon: "home",
     type: "link",
     active: false,
     path : `${process.env.PUBLIC_URL}/dashboard/default`
   },
   {
     title: "Meeting",
-    icon: "meeting",
+    icon: "home",
     type: "link",
     active: false,
     path : `${process.env.PUBLIC_URL}/app/team`
   },
   {
     title: "Analytics",
-    icon: "analytics",
+    icon: "home",
     type: "link",
     active: false,
     path : `${process.env.PUBLIC_URL}/app/team`
   },
   {
     title: "Blocks",
-    icon: "blocks",
+    icon: "home",
     type: "link",
     active: false,
     path : `${process.env.PUBLIC_URL}/app/team`
   },
   {
     title: "Team",
-    icon: "team",
+    icon: "home",
     type: "link",
     active: false,
     path : `${process.env.PUBLIC_URL}/app/team`
   },
   {
     title: "Tasks",
-    icon: "tasks",
+    icon: "home",
     type: "link",
     active: false,
     path : `${process.env.PUBLIC_URL}/app/team`
   },
   {
     title: "Block Board",
-    icon: "block-board",
-    type: "link",
-    active: false,
-    path : `${process.env.PUBLIC_URL}/app/team`
-  },
-  {
-    title: "",
-    icon: "plus",
+    icon: "home",
     type: "link",
     active: false,
     path : `${process.env.PUBLIC_URL}/app/team`

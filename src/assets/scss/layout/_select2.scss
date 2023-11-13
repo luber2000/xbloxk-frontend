@@ -79,8 +79,8 @@
   }
 
   .form-control-primary {
-    border-color: var(--theme-deafult);
-    color: var(--theme-deafult);
+    border-color: var(--theme-default);
+    color: var(--theme-default);
   }
 
   .form-control-secondary {
@@ -114,7 +114,7 @@
   }
 
   .form-control-primary-fill {
-    background-color: var(--theme-deafult);
+    background-color: var(--theme-default);
     color: $white;
   }
 
@@ -169,8 +169,8 @@ $color_cape_cod_approx: #424242;
     .select2-selection__choice {
       padding: 2px 6px !important;
       margin-top: 0 !important;
-      background-color: var(--theme-deafult) !important;
-      border-color: var(--theme-deafult) !important;
+      background-color: var(--theme-default) !important;
+      border-color: var(--theme-default) !important;
       color: $white;
       margin-right: 8px !important;
     }
@@ -187,8 +187,8 @@ $color_cape_cod_approx: #424242;
     color: $color_cape_cod_approx !important;
   }
 
-  .select2-results__options .select2-results__option[aria-selected=true] {
-    background-color: var(--theme-deafult) !important;
+  .select2-results__options .select2-results__option[aria-selected="true"] {
+    background-color: var(--theme-default) !important;
     color: $white !important;
   }
 }
@@ -205,8 +205,8 @@ $color_cape_cod_approx: #424242;
     .select2-selection__choice {
       padding: 2px 6px !important;
       margin-top: 0 !important;
-      background-color: var(--theme-deafult) !important;
-      border-color: var(--theme-deafult) !important;
+      background-color: var(--theme-default) !important;
+      border-color: var(--theme-default) !important;
       color: $white;
       margin-right: 8px !important;
     }
@@ -223,8 +223,8 @@ $color_cape_cod_approx: #424242;
     color: $color_cape_cod_approx !important;
   }
 
-  .select2-results__options .select2-results__option[aria-selected=true] {
-    background-color: var(--theme-deafult) !important;
+  .select2-results__options .select2-results__option[aria-selected="true"] {
+    background-color: var(--theme-default) !important;
     color: $white !important;
   }
 }

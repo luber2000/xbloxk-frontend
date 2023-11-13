@@ -3,7 +3,7 @@
 ==========================**/
 %sidebar-after {
   position: absolute;
-  content: '';
+  content: "";
   top: 48%;
   width: 8px;
   border-top: 1px solid rgba($theme-body-sub-title-color, 0.4);
@@ -11,17 +11,17 @@
 
 %sidebar-active-dot {
   position: absolute;
-  content: '';
+  content: "";
   width: 5px;
   height: 5px;
   top: 50%;
   transform: translateY(-50%);
   left: 25px;
   border-radius: 100%;
-  background: var(--theme-deafult);
+  background: var(--theme-default);
   opacity: 0;
   visibility: hidden;
-  [dir='rtl'] & {
+  [dir="rtl"] & {
     left: unset;
     right: 25px;
   }
@@ -29,14 +29,14 @@
 
 %sidebar-before {
   position: absolute;
-  content: '';
+  content: "";
   width: 1px;
   height: 0;
   background: rgba($theme-body-sub-title-color, 0.4);
   top: -10px;
   left: 27px;
   transition: height 0.5s;
-  [dir='rtl'] & {
+  [dir="rtl"] & {
     left: unset;
     right: 27px;
   }
@@ -44,7 +44,7 @@
 
 %horizontal-after {
   position: absolute;
-  content: '';
+  content: "";
   top: 49%;
   width: 5px;
   height: 1px;
@@ -73,7 +73,7 @@
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid $white;
-    content: '';
+    content: "";
     top: -7px;
     position: absolute;
     left: 10px;
@@ -86,7 +86,7 @@
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid $light-background;
-    content: '';
+    content: "";
     top: -7px;
     position: absolute;
     left: 10px;
@@ -101,7 +101,7 @@
     top: $main-header-top;
     z-index: $main-header-z-index;
     transition: $sidebar-transition;
-    background-color: $white;
+    background-color: $main-body-color;
     box-shadow: $main-header-shadow-1;
     .header-wrapper {
       width: 100%;
@@ -151,7 +151,7 @@
             position: absolute;
             left: 30px;
             top: 27px;
-            content: '\f002';
+            content: "\f002";
             font-size: 16px;
             color: $dark-gray;
             font-family: FontAwesome;
@@ -358,7 +358,7 @@
                 transition: all 0.3s ease;
 
                 &:hover {
-                  stroke: var(--theme-deafult);
+                  stroke: var(--theme-default);
                   transition: all 0.3s ease;
                 }
               }
@@ -489,7 +489,7 @@
               align-items: center;
               .media-body {
                 margin-right: 20px;
-                [dir='rtl'] & {
+                [dir="rtl"] & {
                   margin-right: unset;
                   margin-left: 20px;
                 }
@@ -633,16 +633,16 @@
             &:hover {
               a {
                 span {
-                  color: var(--theme-deafult);
+                  color: var(--theme-default);
                   transition: color 0.3s ease;
                 }
 
                 svg {
-                  stroke: var(--theme-deafult);
+                  stroke: var(--theme-default);
                   transition: stroke 0.3s ease;
 
                   path {
-                    stroke: var(--theme-deafult);
+                    stroke: var(--theme-default);
                     transition: stroke 0.3s ease;
                   }
                 }
@@ -745,7 +745,7 @@
             }
           }
           &.active {
-            color: var(--theme-deafult);
+            color: var(--theme-default);
             font-weight: 500;
           }
         }
@@ -769,10 +769,10 @@
                 svg {
                   transition: all 0.3s ease;
                   &.stroke-icon {
-                    stroke: var(--theme-deafult);
+                    stroke: var(--theme-default);
                   }
                   &.fill-icon {
-                    fill: var(--theme-deafult);
+                    fill: var(--theme-default);
                   }
                 }
               }
@@ -881,7 +881,7 @@
                     .according-menu {
                       i {
                         &:before {
-                          content: '-';
+                          content: "-";
                         }
                       }
                     }
@@ -913,10 +913,10 @@
                   li {
                     a {
                       &.active {
-                        color: var(--theme-deafult);
+                        color: var(--theme-default);
 
                         &:after {
-                          background-color: var(--theme-deafult);
+                          background-color: var(--theme-default);
                         }
                       }
                     }
@@ -933,7 +933,7 @@
               &:hover {
                 > a {
                   > span {
-                    color: var(--theme-deafult);
+                    color: var(--theme-default);
                     transition: all 0.3s ease;
                   }
                 }
@@ -944,11 +944,11 @@
 
                   svg {
                     &.stroke-icon {
-                      stroke: var(--theme-deafult);
+                      stroke: var(--theme-default);
                       transition: all 0.3s ease;
                     }
                     &.fill-icon {
-                      fill: var(--theme-deafult);
+                      fill: var(--theme-default);
                       transition: all 0.3s ease;
                     }
                   }
@@ -974,13 +974,13 @@
                 transition: all 0.3s ease;
 
                 &.active {
-                  //background-image: linear-gradient(90deg, var(--theme-deafult) 0%, #a26cf8 100%);
+                  //background-image: linear-gradient(90deg, var(--theme-default) 0%, #a26cf8 100%);
                   background-color: lighten($primary-color, 22%);
                   transition: all 0.3s ease;
 
                   svg,
                   span {
-                    color: var(--theme-deafult);
+                    color: var(--theme-default);
                     transition: all 0.3s ease;
                   }
                 }
@@ -1032,12 +1032,12 @@
                     }
 
                     &:hover {
-                      color: var(--theme-deafult);
+                      color: var(--theme-default);
                       letter-spacing: 1.5px;
                       transition: all 0.3s ease;
 
                       &:after {
-                        background-color: var(--theme-deafult);
+                        background-color: var(--theme-default);
                       }
                     }
                   }
@@ -1096,19 +1096,19 @@
                           transition: all 0.3s ease;
 
                           &:hover {
-                            color: var(--theme-deafult);
+                            color: var(--theme-default);
                             letter-spacing: 1.5px;
                             transition: all 0.3s ease;
 
                             &:after {
-                              color: var(--theme-deafult);
+                              color: var(--theme-default);
                               transition: all 0.3s ease;
                             }
                           }
 
                           &:after {
                             position: absolute;
-                            content: '';
+                            content: "";
                             left: -12px;
                             top: 50%;
                             width: 5px;
@@ -1254,7 +1254,7 @@
           z-index: 9;
           height: auto;
           line-height: inherit;
-          background: $white;
+          background: $sidebar-background-color;
           width: $sidebar-compact-width;
           text-align: left;
           transition: 0.3s;
@@ -1331,7 +1331,7 @@
                     transition: all 0.3s ease;
                     a {
                       text-align: left;
-                      [dir='rtl'] & {
+                      [dir="rtl"] & {
                         text-align: right;
                       }
                     }
@@ -1345,9 +1345,9 @@
                     > a {
                       padding: 12px 15px;
                       transition: all 0.3s ease;
-svg{
-  margin-right: 15px;
-}
+                      svg {
+                        margin-right: 15px;
+                      }
                       span {
                         display: inline-block;
                       }
@@ -1398,7 +1398,7 @@ svg{
                   }
 
                   a {
-                    svg{
+                    svg {
                       margin: 0;
                     }
                     span {
@@ -1429,6 +1429,14 @@ svg{
               display: none;
             }
 
+            .vertical-center-container {
+              display: flex; /* Activa el modelo Flexbox */
+              flex-direction: column; /* Alinea verticalmente los elementos uno encima del otro */
+              justify-content: center; /* Centra verticalmente los elementos */
+              align-items: center; /* Centra horizontalmente los elementos */
+              height: 100%; /* Establece la altura del contenedor para ocupar todo el espacio disponible */
+            }            
+
             .sidebar-links {
               height: $sidebar-height;
               left: -300px;
@@ -1455,7 +1463,7 @@ svg{
                   span {
                     letter-spacing: 0.7px;
                     text-transform: capitalize;
-                    color: rgba($theme-body-sub-title-color, 0.8);
+                    color: rgba($white, 0.8);
                   }
 
                   &.link-nav {
@@ -1500,12 +1508,12 @@ svg{
                 &.sidebar-main-title {
                   padding: 25px 0 6px 20px;
                   margin-top: 10px;
-                  [dir='rtl'] & {
+                  [dir="rtl"] & {
                     padding: 25px 20px 6px 0;
                   }
                   &::before {
                     position: absolute;
-                    content: '';
+                    content: "";
                     top: 0;
                     left: 50%;
                     background: var(--sidebar-border);
@@ -1550,22 +1558,22 @@ svg{
                     &:hover {
                       svg {
                         fill: rgba($primary-color, 0.1%);
-                        stroke: var(--theme-deafult);
+                        stroke: var(--theme-default);
                         transition: all 0.3s ease;
                         &.fill-icon {
-                          fill: var(--theme-deafult);
+                          fill: var(--theme-default);
                           stroke: none;
                         }
                       }
 
                       span {
-                        color: var(--theme-deafult);
+                        color: var(--theme-default);
                         transition: all 0.3s ease;
                       }
 
                       .according-menu {
                         i {
-                          color: var(--theme-deafult);
+                          color: var(--theme-default);
                           transition: all 0.3s ease;
                         }
                       }
@@ -1626,7 +1634,7 @@ svg{
                   li {
                     &:hover {
                       > a {
-                        color: var(--theme-deafult);
+                        color: var(--theme-default);
                         transition: all 0.3s ease;
                       }
                     }
@@ -1669,7 +1677,7 @@ svg{
                         @extend %sidebar-active-dot;
                       }
                       &.active {
-                        color: var(--theme-deafult);
+                        color: var(--theme-default);
                         &::before {
                           opacity: 1;
                           visibility: visible;
@@ -1706,7 +1714,7 @@ svg{
                     .link-section {
                       &:hover {
                         h5 {
-                          color: var(--theme-deafult) !important;
+                          color: var(--theme-default) !important;
                           transition: all 0.3s ease;
                         }
                       }
@@ -1737,7 +1745,7 @@ svg{
                         }
                         &.active {
                           h5 {
-                            color: var(--theme-deafult);
+                            color: var(--theme-default);
                             &::before {
                               opacity: 1;
                               visibility: visible;
@@ -1770,7 +1778,7 @@ svg{
                               }
 
                               &.active {
-                                color: var(--theme-deafult);
+                                color: var(--theme-default);
                               }
                             }
                           }
@@ -1811,7 +1819,7 @@ svg{
                   display: block;
                   &::after {
                     position: absolute;
-                    content: '';
+                    content: "";
                     width: 4px;
                     height: 35px;
                     right: 0;
@@ -1821,7 +1829,7 @@ svg{
                     border-radius: 5px 0px 0px 5px;
                     opacity: 0;
                     visibility: hidden;
-                    [dir='rtl'] & {
+                    [dir="rtl"] & {
                       right: unset;
                       left: 0;
                     }
@@ -1843,12 +1851,12 @@ svg{
                     }
                     .according-menu {
                       i {
-                        color: var(--theme-deafult);
+                        color: var(--theme-default);
                       }
                     }
 
                     span {
-                      color: var(--theme-deafult);
+                      color: var(--theme-default);
                       transition: all 0.3s ease;
                     }
                   }
@@ -1918,7 +1926,7 @@ svg{
       }
       .toggle-sidebar {
         svg {
-          stroke: var(--theme-deafult);
+          stroke: var(--theme-default);
         }
       }
       .page-body-wrapper {
@@ -1938,10 +1946,10 @@ svg{
                   &.active {
                     svg {
                       &.stroke-icon {
-                        stroke: var(--theme-deafult);
+                        stroke: var(--theme-default);
                       }
                       &.fill-icon {
-                        fill: var(--theme-deafult);
+                        fill: var(--theme-default);
                       }
                     }
                   }
@@ -2012,8 +2020,8 @@ svg{
                   background-color: rgba($primary-color, 0.2);
 
                   svg {
-                    color: var(--theme-deafult);
-                    stroke: var(--theme-deafult);
+                    color: var(--theme-default);
+                    stroke: var(--theme-default);
                   }
                 }
               }
@@ -2036,7 +2044,7 @@ svg{
                     }
 
                     &.active {
-                      color: var(--theme-deafult);
+                      color: var(--theme-default);
                     }
                   }
                 }
@@ -2083,7 +2091,6 @@ svg{
         position: fixed;
         top: 0;
       }
-  
     }
 
     .toggle-sidebar {
@@ -2270,7 +2277,7 @@ svg{
                   > a {
                     &::after {
                       position: absolute;
-                      content: '';
+                      content: "";
                       left: 20px;
                       top: 48%;
                       width: 8px;
@@ -2298,7 +2305,7 @@ svg{
 
                         &::after {
                           position: absolute;
-                          content: '';
+                          content: "";
                           left: 20px;
                           top: 48%;
                           width: 6px;
@@ -2309,10 +2316,10 @@ svg{
                   }
                 }
               }
-              &:hover{
-                   .sidebar-submenu{
-                    display: block !important;
-                   }
+              &:hover {
+                .sidebar-submenu {
+                  display: block !important;
+                }
               }
             }
 
@@ -2367,7 +2374,7 @@ svg{
           }
         }
 
-        &[sidebar-layout='stroke-svg'] {
+        &[sidebar-layout="stroke-svg"] {
           .sidebar-links {
             .mega-menu {
               svg {
@@ -2382,7 +2389,7 @@ svg{
             }
           }
         }
-        &[sidebar-layout='fill-svg'] {
+        &[sidebar-layout="fill-svg"] {
           .sidebar-links {
             .mega-menu {
               svg {
@@ -2563,7 +2570,7 @@ svg{
           top: 37px;
           width: calc(100% - 50px);
           left: 25px;
-          [dir='rtl'] & {
+          [dir="rtl"] & {
             left: unset;
             right: 25px;
           }
@@ -2631,7 +2638,7 @@ svg{
   &.modern-type {
     .progress-chart-wrap {
       margin-left: -22px;
-      [dir='rtl'] & {
+      [dir="rtl"] & {
         margin-left: unset;
         margin-right: -22px;
       }
@@ -2770,9 +2777,9 @@ svg{
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       left: 0;
-      top:-50px;
+      top: -50px;
       width: 100%;
       height: 300px;
       background-image: $gradient-bg-primary;
@@ -3053,11 +3060,11 @@ svg{
       margin: 0 -15px;
 
       h5 {
-        color: var(--theme-deafult);
+        color: var(--theme-default);
       }
 
       svg {
-        stroke: var(--theme-deafult) !important;
+        stroke: var(--theme-default) !important;
       }
     }
   }
@@ -3202,7 +3209,7 @@ svg{
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         left: 0;
         width: 100%;
         height: 200px;
@@ -3380,24 +3387,27 @@ svg{
   }
 }
 
-.page-wrapper { 
-  &[sidebar-layout='stroke-svg'] {
-    .sidebar-wrapper,.page-header  {
-    .stroke-icon {
-      display: inline-block;
+.page-wrapper {
+  &[sidebar-layout="stroke-svg"] {
+    .sidebar-wrapper,
+    .page-header {
+      .stroke-icon {
+        display: inline-block;
+      }
+      .fill-icon {
+        display: none;
+      }
     }
-    .fill-icon {
-      display: none;
-    }
-  }}
-  &[sidebar-layout='fill-svg'] {
-       .sidebar-wrapper,.page-header  {
-    .stroke-icon {
-      display: none;
-    }
-    .fill-icon {
-      display: inline-block;
-    }
+  }
+  &[sidebar-layout="fill-svg"] {
+    .sidebar-wrapper,
+    .page-header {
+      .stroke-icon {
+        display: none;
+      }
+      .fill-icon {
+        display: inline-block;
+      }
     }
   }
 }

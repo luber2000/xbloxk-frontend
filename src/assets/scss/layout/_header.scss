@@ -2,9 +2,9 @@
 .left-header {
   .d-flex {
     align-items: center;
-  [dir="rtl"] &{
-        justify-content: end;
-  }
+    [dir="rtl"] & {
+      justify-content: end;
+    }
   }
   h6 {
     line-height: 1.6;
@@ -68,7 +68,7 @@
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     height: 40px;
     width: 40px;
@@ -90,8 +90,8 @@
     }
 
     > svg {
-      color: var(--theme-deafult) !important;
-      stroke: var(--theme-deafult) !important;
+      color: var(--theme-default) !important;
+      stroke: var(--theme-default) !important;
     }
   }
 }
