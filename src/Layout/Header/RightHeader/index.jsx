@@ -17,7 +17,7 @@ const RightHeader = () => {
         {/* <Col md="8"> */}
         <UL attrUL={{ className: 'simple-list nav-menus flex-row' }}>
           {/* <Language />
-          <BookmarkHeader />
+          <BookmarkHeader /> 
           <MoonLight />
           <CartHeader /> */}
           <Searchbar />
