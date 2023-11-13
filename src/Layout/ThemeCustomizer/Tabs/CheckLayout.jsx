@@ -41,15 +41,7 @@ const CheckLayout = () => {
     <Fragment>
       <ul className='sidebar-type layout-grid layout-types'>
         {/* attrUL={{ className: "sidebar-type layout-grid layout-types" }}  */}
-        <LI attrLI={{ dataattr: 'compact-sidebar', onClick: (e) => handlePageLayputs(classes[0]) }}>
-          {/* // onClick={(e) => handlePageLayputs(classes[0])} */}
-
-          <div className='layout-img'>
-            {' '}
-            <Media src={dubai} className='img-fluid' alt='' />
-            <H6>Dubai</H6>
-          </div>
-        </LI>
+        
         <LI
           attrLI={{ dataattr: 'modern-layout', onClick: (e) => handlePageLayputs(classes[2]) }}
           // onClick={(e) => handlePageLayputs(classes[2])}
