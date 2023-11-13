@@ -83,27 +83,27 @@ const MyProfileEdit = () => {
             </Row>
             <FormGroup className='mb-3'>
               <H6 attrH6={{ className: 'form-label' }}>{Bio}</H6>
-              <Input type='textarea' className='form-control' rows='5' defaultValue='On the other hand, we denounce with righteous indignation' />
+              <Input type='textarea' className='form-control custom-input-color' rows='5' defaultValue='On the other hand, we denounce with righteous indignation' />
             </FormGroup>
             <FormGroup className='mb-3'>
               <Label className='form-label'>{FirstName}</Label>
-              <Input className='form-control' type='text' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+              <Input className='form-control custom-input-color' type='text' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
             </FormGroup>
             <FormGroup className='mb-3'>
               <Label className='form-label'>{LastName}</Label>
-              <Input className='form-control' type='text' value={lastName} onChange={(e) => setLastName(e.target.value)} />
+              <Input className='form-control custom-input-color' type='text' value={lastName} onChange={(e) => setLastName(e.target.value)} />
             </FormGroup>
             <FormGroup className='mb-3'>
               <Label className='form-label'>{EmailAddress}</Label>
-              <Input className='form-control' placeholder='your-email@domain.com' value={email} onChange={(e) => setEmail(e.target.value)} />
+              <Input className='form-control custom-input-color' placeholder='your-email@domain.com' value={email} onChange={(e) => setEmail(e.target.value)} />
             </FormGroup>
             <FormGroup className='mb-3'>
               <Label className='form-label'>{Password}</Label>
-              <Input className='form-control' type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
+              <Input className='form-control custom-input-color' type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
             </FormGroup>
             <FormGroup className='mb-3'>
               <Label className='form-label'>{PasswordConfirmation}</Label>
-              <Input className='form-control' type='password' value={passwordConfirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} />
+              <Input className='form-control custom-input-color' type='password' value={passwordConfirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} />
             </FormGroup>
             <div className='form-footer'>
               <Btn attrBtn={{ className: 'btn-block', color: 'primary', type: 'submit' }}>{Save}</Btn>

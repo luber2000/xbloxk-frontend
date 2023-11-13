@@ -1,6 +1,24 @@
 /**=====================
     03.  Card CSS Start
 ==========================**/
+.custom-input-color {
+  background-color: #1D1E26;
+  color: white;
+  border: 1px solid #313C4C;
+}
+
+.custom-input-color::placeholder {
+  color: #A8A9AD;
+}
+
+.custom-input-color:focus {
+  color: #1D1E26;
+}
+
+.custom-save-new-member {
+  background-color: #262932 !important;
+}
+
 //Card css
 .card {
   margin-bottom: $card-margin-bottom;
@@ -17,6 +35,7 @@
 
   .card-header {
     background-color: $card-header-bg-color;
+    color: $white;
     padding: $card-padding;
     border-bottom: $card-border-color;
     border-top-left-radius: $card-border-radious;
@@ -93,7 +112,8 @@
 
   .card-body {
     padding: $card-padding;
-    background-color: $card-body-bg-color;
+    background-color: #262932;
+    color: $white;
 
     p {
       &:last-child {

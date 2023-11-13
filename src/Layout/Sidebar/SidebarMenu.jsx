@@ -55,9 +55,7 @@ const SidebarMenu = ({ setMainMenu, props, sidebartoogle, setNavActive, activeCl
               <i className="fa fa-angle-right ps-2" aria-hidden="true"></i>
             </div>
           </li>
-          <li className="vertical-center-container">
-            <SidebarMenuItems setMainMenu={setMainMenu} props={props} sidebartoogle={sidebartoogle} setNavActive={setNavActive} activeClass={activeClass} />
-          </li>
+          <SidebarMenuItems setMainMenu={setMainMenu} props={props} sidebartoogle={sidebartoogle} setNavActive={setNavActive} activeClass={activeClass} />
         </ul>
       </div>
       <div className="right-arrow" onClick={scrollToRight}>

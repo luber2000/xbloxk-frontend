@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect, useContext } from "react";
 import CustomContext from "../../_helper/Customizer";
-import { MENUITEMS as initialMenuItems } from "./Menu"; // Renombrar la importación
+import { MENUITEMS } from "./Menu";
 import SidebarIcon from "./SidebarIcon";
 import SidebarLogo from "./SidebarLogo";
 import SidebarMenu from "./SidebarMenu";
@@ -12,12 +12,19 @@ const Sidebar = (props) => {
   const defaultLayout = Object.keys(customizer.layout);
 
   const layout = id ? id : defaultLayout;
-  const [mainmenu, setMainMenu] = useState(initialMenuItems); // Usar un estado para MENUITEMS
+  // eslint-disable-next-line
+  const [mainmenu, setMainMenu] = useState(MENUITEMS);
 
   const [width, setWidth] = useState(0);
 
   const handleScroll = () => {
     if (window.scrollY > 400) {
+      // if (
+      //   customizer.settings.sidebar.type.split(' ').pop() ===
+      //   'material-type' ||
+      //   customizer.settings.sidebar.type.split(' ').pop() ===
+      //   'advance-layout'
+      // )
       document.querySelector(".sidebar-main").className = "sidebar-main hovered";
     } else {
       if (document.getElementById("sidebar-main")) document.querySelector(".sidebar-main").className = "sidebar-main";
@@ -29,27 +36,27 @@ const Sidebar = (props) => {
     window.addEventListener("resize", handleResize);
     handleResize();
     const currentUrl = window.location.pathname;
-    // initialMenuItems.forEach((items) => {
-    //   items.Items.forEach((Items) => {
-    //     if (Items.path === currentUrl) setNavActive(Items);
-    //     if (!Items.children) return false;
-    //     Items.children.forEach((subItems) => {
-    //       if (subItems.path === currentUrl) setNavActive(subItems);
-    //       if (!subItems.children) return false;
-    //       subItems.children.forEach((subSubItems) => {
-    //         if (subSubItems.path === currentUrl) {
-    //           setNavActive(subSubItems);
-    //           return true;
-    //         } else {
-    //           return false;
-    //         }
-    //       });
-    //       return subItems;
-    //     });
-    //     return Items;
-    //   });
-    //   return items;
-    // });
+    MENUITEMS.map((items) => {
+      items.Items.filter((Items) => {
+        if (Items.path === currentUrl) setNavActive(Items);
+        if (!Items.children) return false;
+        Items.children.filter((subItems) => {
+          if (subItems.path === currentUrl) setNavActive(subItems);
+          if (!subItems.children) return false;
+          subItems.children.filter((subSubItems) => {
+            if (subSubItems.path === currentUrl) {
+              setNavActive(subSubItems);
+              return true;
+            } else {
+              return false;
+            }
+          });
+          return subItems;
+        });
+        return Items;
+      });
+      return items;
+    });
     window.addEventListener("scroll", handleScroll);
     handleScroll();
     return () => {
@@ -63,12 +70,13 @@ const Sidebar = (props) => {
   };
 
   const activeClass = () => {
+    // document.querySelector('.sidebar-link').classList.add('active');
     document.querySelector(".bg-overlay1").classList.add("active");
   };
 
   const setNavActive = (item) => {
-    initialMenuItems.forEach((menuItems) => {
-      menuItems.Items.forEach((Items) => {
+    MENUITEMS.map((menuItems) => {
+      menuItems.Items.filter((Items) => {
         if (Items !== item) {
           Items.active = false;
           document.querySelector(".bg-overlay1").classList.remove("active");
@@ -78,7 +86,7 @@ const Sidebar = (props) => {
           document.querySelector(".sidebar-links").classList.add("active");
         }
         if (Items.children) {
-          Items.children.forEach((submenuItems) => {
+          Items.children.filter((submenuItems) => {
             if (submenuItems.children && submenuItems.children.includes(item)) {
               Items.active = true;
               submenuItems.active = true;
@@ -93,7 +101,7 @@ const Sidebar = (props) => {
       return menuItems;
     });
     item.active = !item.active;
-    setMainMenu([...initialMenuItems]); // Actualizar el estado con la copia modificada
+    setMainMenu({ mainmenu: MENUITEMS });
   };
 
   const closeOverlay = () => {
@@ -111,6 +119,7 @@ const Sidebar = (props) => {
       <div className={`sidebar-wrapper ${toggleIcon ? "close_icon" : ""}`} sidebar-layout="stroke-svg">
         <SidebarIcon />
         <SidebarLogo />
+        {/* sidebartoogle={sidebartoogle} */}
         <SidebarMenu setMainMenu={setMainMenu} props={props} setNavActive={setNavActive} activeClass={activeClass} width={width} />
       </div>
     </Fragment>
