@@ -17,11 +17,11 @@ const SidebarLogo = () => {
   return (
     <div className='logo-wrapper'>
       {layout1 !== 'compact-wrapper dark-sidebar' && layout1 !== 'compact-wrapper color-sidebar' && mixLayout ? (
-        <Link to={`${process.env.PUBLIC_URL}/`}>
+        <Link to={`${process.env.REACT_APP_}/`}>
           <Image attrImage={{ className: 'img-fluid d-inline', src: `${CubaIcon}`, alt: '' }} />
         </Link>
       ) : (
-        <Link to={`${process.env.PUBLIC_URL}/`}>
+        <Link to={`${process.env.REACT_APP_}/`}>
           <Image attrImage={{ className: 'img-fluid d-inline', src: `${require('../../assets/images/logo/logo-dark.png')}`, alt: '' }} />
         </Link>
       )}

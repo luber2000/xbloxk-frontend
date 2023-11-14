@@ -16,7 +16,7 @@ const ForgetPwd = ({ logoClassMain }) => {
               <div className='login-card'>
                 <div>
                   <div>
-                    <Link className={`logo ${logoClassMain ? logoClassMain : ''}`} to={process.env.PUBLIC_URL}>
+                    <Link className={`logo ${logoClassMain ? logoClassMain : ''}`} to={process.env.REACT_APP_}>
                       <Image attrImage={{ className: 'img-fluid for-light', src: logoWhite, alt: 'looginpage' }} />
                       <Image attrImage={{ className: 'img-fluid for-dark', src: logoDark, alt: 'looginpage' }} />
                     </Link>

@@ -21,7 +21,7 @@ const AddTeamMemberButton = () => {
   const { createUser } = useContext(ContactAppContext);
   
   const redirectToProfileEdit = () => {
-    history(`${process.env.PUBLIC_URL}/member/add/`);
+    history(`${process.env.REACT_APP_}/member/add/`);
   };
 
   return (

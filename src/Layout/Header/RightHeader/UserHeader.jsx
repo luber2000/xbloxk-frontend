@@ -16,7 +16,7 @@ const UserHeader = () => {
   const auth0_profile = JSON.parse(localStorage.getItem("auth0_profile"));
 
   const redirectToProfileEdit = () => {
-    history(`${process.env.PUBLIC_URL}/app/users/edit/`);
+    history(`${process.env.REACT_APP_}/app/users/edit/`);
   };
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const UserHeader = () => {
     localStorage.removeItem("auth0_profile");
     localStorage.removeItem("Name");
     localStorage.setItem("authenticated", false);
-    history(`${process.env.PUBLIC_URL}/login`);
+    history(`${process.env.REACT_APP_}/login`);
   };
 
   const UserMenuRedirect = (redirect) => {
@@ -61,7 +61,7 @@ const UserHeader = () => {
       <UL attrUL={{ className: "simple-list profile-dropdown onhover-show-div" }}>
         {/* <LI
           attrLI={{
-            onClick: () => UserMenuRedirect(`${process.env.PUBLIC_URL}/app/users/profile/`),
+            onClick: () => UserMenuRedirect(`${process.env.REACT_APP_}/app/users/profile/`),
           }}>
           <User />
           <span>{Account} </span>

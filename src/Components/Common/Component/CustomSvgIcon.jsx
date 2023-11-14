@@ -22,7 +22,7 @@ const CustomSvgIcon = (props) => {
 
   return (
     // <svg {...res}>
-    //   <use href={`${process.env.PUBLIC_URL}/svg/${iconId}.svg`}></use>
+    //   <use href={`${process.env.REACT_APP_}/svg/${iconId}.svg`}></use>
     // </svg>
     // <img src={`${iconId}`} alt="Search SVG" />
     <img src={assignIcon({iconId})} alt="Search SVG" />
