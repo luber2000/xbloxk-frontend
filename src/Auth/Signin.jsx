@@ -34,7 +34,7 @@ const Signin = ({ selected }) => {
 
     try {
       // Realiza una solicitud POST al endpoint del backend
-      const response = await axios.post('http://127.0.0.1:8000/token', new URLSearchParams({
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/token`, new URLSearchParams({
       // const response = await axios.post(`${apiUrl}/token`, new URLSearchParams({
         username: email,
         password: password,

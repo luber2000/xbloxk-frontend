@@ -16,7 +16,7 @@ const UsersList = () => {
     const fetchUsers = async () => {
       try {
         // Cambia la URL por la de tu endpoint de FastAPI para obtener usuarios
-        const response = await axios.get('http://127.0.0.1:8000/users/');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/users/`);
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users", error);

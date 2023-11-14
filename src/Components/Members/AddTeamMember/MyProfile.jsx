@@ -36,7 +36,7 @@ const MyProfileEdit = () => {
         password_confirmation: passwordConfirmation
         // Incluye otros campos aquí
       });
-      const response = await axios.post('http://127.0.0.1:8000/users/create', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/users/create`, {
         email: email,
         first_name: firstName,
         last_name: lastName,
