@@ -11,7 +11,7 @@ const Callback = () => {
     if (user) {
       localStorage.setItem('auth0_profile', JSON.stringify(user));
       localStorage.setItem('authenticated', true);
-      window.location.href = `${process.env.REACT_APP_}
+      window.location.href = `${process.env.REACT_APP_PUBLIC_URL}
       /`;
     }
   });

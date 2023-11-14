@@ -14,7 +14,7 @@ const SearchMember = () => {
   const { layoutURL } = useContext(CustomizerContext);
 
   const redirectToTeams = () => {
-    history(`${process.env.REACT_APP_}/members/`);
+    history(`${process.env.REACT_APP_PUBLIC_URL}/members/`);
   };
 
   const hrStyles = {

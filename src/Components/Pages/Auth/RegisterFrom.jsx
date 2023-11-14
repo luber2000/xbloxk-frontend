@@ -13,7 +13,7 @@ const RegisterFrom = ({ logoClassMain }) => {
       <div className='login-card'>
         <div>
           <div>
-            <Link className={`logo ${logoClassMain ? logoClassMain : ''}`} to={process.env.REACT_APP_}>
+            <Link className={`logo ${logoClassMain ? logoClassMain : ''}`} to={process.env.REACT_APP_PUBLIC_URL}>
               <Image attrImage={{ className: 'img-fluid for-light', src: logoWhite, alt: 'looginpage' }} />
               <Image attrImage={{ className: 'img-fluid for-dark', src: logoDark, alt: 'looginpage' }} />
             </Link>
@@ -77,7 +77,7 @@ const RegisterFrom = ({ logoClassMain }) => {
               </div>
               <P attrPara={{ className: 'mb-0 text-start' }}>
                 Already have an account?
-                <Link className='ms-2' to={`${process.env.REACT_APP_}/pages/authentication/login-simple`}>
+                <Link className='ms-2' to={`${process.env.REACT_APP_PUBLIC_URL}/pages/authentication/login-simple`}>
                   Sign in
                 </Link>
               </P>

@@ -40,18 +40,18 @@ const Routers = () => {
             <Route path={'/'} element={<PrivateRoute />}>
               {login || authenticated || jwt_token ? (
                 <>
-                  <Route exact path="test" element={<Navigate to={`${process.env.REACT_APP_}`} />} />
-                  <Route exact path={`/`} element={<Navigate to={`${process.env.REACT_APP_}/`} />} />
-                  {/* <Route exact path={`${process.env.REACT_APP_}`} element={<Navigate to={`${process.env.REACT_APP_}/${layout}`} />} />
-                  <Route exact path={`/`} element={<Navigate to={`${process.env.REACT_APP_}/${layout}`} />} /> */}
+                  <Route exact path="test" element={<Navigate to={`${process.env.REACT_APP_PUBLIC_URL}`} />} />
+                  <Route exact path={`/`} element={<Navigate to={`${process.env.REACT_APP_PUBLIC_URL}/`} />} />
+                  {/* <Route exact path={`${process.env.REACT_APP_PUBLIC_URL}`} element={<Navigate to={`${process.env.REACT_APP_PUBLIC_URL}/${layout}`} />} />
+                  <Route exact path={`/`} element={<Navigate to={`${process.env.REACT_APP_PUBLIC_URL}/${layout}`} />} /> */}
                 </>
               ) : (
                 ''
               )}
               <Route path={`/*`} element={<LayoutRoutes />} />
             </Route>
-            <Route path={`${process.env.REACT_APP_}/callback`} render={() => <Callback />} />
-            <Route exact path={`${process.env.REACT_APP_}/login`} element={<Signin />} />
+            <Route path={`${process.env.REACT_APP_PUBLIC_URL}/callback`} render={() => <Callback />} />
+            <Route exact path={`${process.env.REACT_APP_PUBLIC_URL}/login`} element={<Signin />} />
             {authRoutes.map(({ path, Component }, i) => (
               <Route path={path} element={Component} key={i} />
             ))}

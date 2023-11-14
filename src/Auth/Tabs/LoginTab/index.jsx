@@ -32,7 +32,7 @@ const LoginTab = ({ selected }) => {
     setName('Emay Walter');
     if (email !== '' && password !== '') {
       localStorage.setItem('login', JSON.stringify(true));
-      history(`${process.env.REACT_APP_}/`);
+      history(`${process.env.REACT_APP_PUBLIC_URL}/`);
     }
   };
 
@@ -50,7 +50,7 @@ const LoginTab = ({ selected }) => {
         setValue(man);
         setName('Emay Walter');
         localStorage.setItem('token', Jwt_token);
-        window.location.href = `${process.env.REACT_APP_}/`;
+        window.location.href = `${process.env.REACT_APP_PUBLIC_URL}/`;
         return user;
       });
   };

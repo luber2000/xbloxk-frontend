@@ -49,7 +49,7 @@ const UsersList = () => {
             {users.map((user, index) => (
               <tr key={user.id}>
                 <td>
-                  <Link to={`${process.env.REACT_APP_}/member/edit/${user.id}`}>
+                  <Link to={`${process.env.REACT_APP_PUBLIC_URL}/member/edit/${user.id}`}>
                     {user.first_name}
                   </Link>
                 </td>

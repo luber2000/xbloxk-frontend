@@ -14,7 +14,7 @@ const LoginForm = ({ logoClassMain }) => {
       <div className='login-card'>
         <div>
           <div>
-            <Link className={`logo ${logoClassMain ? logoClassMain : ''}`} to={process.env.REACT_APP_}>
+            <Link className={`logo ${logoClassMain ? logoClassMain : ''}`} to={process.env.REACT_APP_PUBLIC_URL}>
               <Image attrImage={{ className: 'img-fluid for-light', src: logoWhite, alt: 'looginpage' }} />
               <Image attrImage={{ className: 'img-fluid for-dark', src: logoDark, alt: 'looginpage' }} />
             </Link>
@@ -44,7 +44,7 @@ const LoginForm = ({ logoClassMain }) => {
                     Remember password
                   </Label>
                 </div>
-                <Link className='link' to={`${process.env.REACT_APP_}/pages/authentication/forget-pwd`}>
+                <Link className='link' to={`${process.env.REACT_APP_PUBLIC_URL}/pages/authentication/forget-pwd`}>
                   Forgot password?
                 </Link>
               </FormGroup>
@@ -73,7 +73,7 @@ const LoginForm = ({ logoClassMain }) => {
 
               <P attrPara={{ className: 'text-center mb-0 ' }}>
                 Don't have account?
-                <Link className='ms-2' to={`${process.env.REACT_APP_}/pages/authentication/register-simple`}>
+                <Link className='ms-2' to={`${process.env.REACT_APP_PUBLIC_URL}/pages/authentication/register-simple`}>
                   Create Account
                 </Link>
               </P>
