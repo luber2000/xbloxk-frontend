@@ -3,42 +3,42 @@ export const MENUITEMS = [
     Items: [
       {
         title: "Lobby",
-        icon: "contact",
+        icon: "lobby",
         type: "link",
         active: false,
         path: `${process.env.PUBLIC_URL}/#`,
       },
       {
         title: "Meeting",
-        icon: "contact",
+        icon: "meeting",
         type: "link",
         active: false,
         path: `${process.env.PUBLIC_URL}/#`,
       },
       {
         title: "Analytics",
-        icon: "home",
+        icon: "analytics",
         type: "link",
         active: false,
         path : `${process.env.PUBLIC_URL}/#`
       },
       {
         title: "Blocks",
-        icon: "home",
+        icon: "blocks",
         type: "link",
         active: false,
         path : `${process.env.PUBLIC_URL}/#`
       },
       {
         title: "Team",
-        icon: "home",
+        icon: "team",
         type: "link",
         active: false,
-        path : `${process.env.PUBLIC_URL}/members-groups`
+        path : `${process.env.PUBLIC_URL}/members-groups/`
       },
       {
         title: "Tasks",
-        icon: "home",
+        icon: "tasks",
         type: "link",
         active: false,
         path : `${process.env.PUBLIC_URL}/#`

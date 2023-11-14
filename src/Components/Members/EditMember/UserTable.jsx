@@ -47,7 +47,7 @@ const UserTable = () => {
               {data.map((items, i) => (
                 <tr key={i}>
                   <td>
-                    <Link className='theme-text' to={`${process.env.PUBLIC_URL}/app/project/project-list/${layoutURL}`}>
+                    <Link className='theme-text' to={`${process.env.PUBLIC_URL}/app/project/project-list/`}>
                       {items.projectName}
                     </Link>
                   </td>

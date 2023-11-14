@@ -16,7 +16,7 @@ const UserHeader = () => {
   const auth0_profile = JSON.parse(localStorage.getItem("auth0_profile"));
 
   const redirectToProfileEdit = () => {
-    history(`${process.env.PUBLIC_URL}/app/users/edit/${layoutURL}`);
+    history(`${process.env.PUBLIC_URL}/app/users/edit/`);
   };
 
   useEffect(() => {
@@ -61,7 +61,7 @@ const UserHeader = () => {
       <UL attrUL={{ className: "simple-list profile-dropdown onhover-show-div" }}>
         {/* <LI
           attrLI={{
-            onClick: () => UserMenuRedirect(`${process.env.PUBLIC_URL}/app/users/profile/${layoutURL}`),
+            onClick: () => UserMenuRedirect(`${process.env.PUBLIC_URL}/app/users/profile/`),
           }}>
           <User />
           <span>{Account} </span>

@@ -12,7 +12,7 @@ const TeamGroup = () => {
   const { layoutURL } = useContext(CustomizerContext);
 
   const redirectToTeams = () => {
-    history(`${process.env.PUBLIC_URL}/search-members/${layoutURL}`);
+    history(`${process.env.PUBLIC_URL}/search-members/`);
   };
 
   const hrStyles = {

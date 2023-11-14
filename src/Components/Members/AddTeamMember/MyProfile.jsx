@@ -73,7 +73,7 @@ const MyProfileEdit = () => {
                 <div className='media'>
                   <Image attrImage={{ className: 'img-70 m-0 rounded-circle', alt: '', src: `${require('../../../assets/images/user/7.jpg')}` }} />
                   <div className='media-body'>
-                    <Link to={`${process.env.PUBLIC_URL}/app/users/userProfile/${layoutURL}`}>
+                    <Link to={`${process.env.PUBLIC_URL}/app/users/userProfile/`}>
                       <H5 attrH5={{ className: 'mb-1' }}>MARK JECNO</H5>
                     </Link>
                     <P>DESIGNER</P>

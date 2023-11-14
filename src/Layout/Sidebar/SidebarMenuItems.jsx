@@ -1,6 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import CustomSvgIcon from "../../Components/Common/Component/CustomSvgIcon";
 import SvgIcon from "../../Components/Common/Component/SvgIcon";
 import CustomizerContext from "../../_helper/Customizer";
 import { MENUITEMS } from "./Menu";
@@ -69,8 +70,8 @@ const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClas
                     setNavActive(menuItem);
                     activeClass(menuItem.active);
                   }}>
-                  <SvgIcon className="stroke-icon" iconId={`stroke-${menuItem.icon}`} />
-                  <SvgIcon className="fill-icon" iconId={`fill-${menuItem.icon}`} />
+                  <CustomSvgIcon className="stroke-icon" iconId={`stroke-${menuItem.icon}`} />
+                  <CustomSvgIcon className="fill-icon" iconId={`fill-${menuItem.icon}`} />
                   <span>{t(menuItem.title)}</span>
                   {menuItem.badge ? <label className={menuItem.badge}>{menuItem.badgetxt}</label> : ""}
                   <div className="according-menu">{menuItem.active ? <i className="fa fa-angle-down"></i> : <i className="fa fa-angle-right"></i>}</div>
