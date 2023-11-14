@@ -81,7 +81,7 @@ const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClas
               )}
 
               {menuItem.type === "link" ? (
-                <Link to={menuItem.path + "/" + layoutId} className={`sidebar-link sidebar-title link-nav  ${CurrentPath.includes(menuItem.title.toLowerCase()) ? "active" : ""}`} onClick={() => toggletNavActive(menuItem)}>
+                <Link to={menuItem.path} className={`sidebar-link sidebar-title link-nav  ${CurrentPath.includes(menuItem.title.toLowerCase()) ? "active" : ""}`} onClick={() => toggletNavActive(menuItem)}>
                   <SvgIcon className="stroke-icon" iconId={`stroke-${menuItem.icon}`} />
                   <SvgIcon className="fill-icon" iconId={`fill-${menuItem.icon}`} />
                   <span>{t(menuItem.title)}</span>
