@@ -52,7 +52,7 @@ const Signin = ({ selected }) => {
         // Aquí puedes decidir si también deseas almacenar el "refreshToken" o cualquier otra información
         localStorage.setItem('login', JSON.stringify(true));
         localStorage.setItem('Name', `${response.data.first_name} ${response.data.last_name}`);
-        history(`${process.env.PUBLIC_URL}`);
+        history(`${process.env.REACT_APP_PUBLIC_URL}`);
         toast.success("Successfully logged in!..");
       }
     } catch (error) {

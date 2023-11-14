@@ -11,6 +11,7 @@ import SearchMemberPage from "../Components/Members/SearchMember";
 export const routes = [
   // //page
   // { path: `${process.env.REACT_APP_PUBLIC_URL}/:layout`, Component: <SamplePage /> },
+  { path: `${process.env.REACT_APP_PUBLIC_URL}`, Component: <SamplePage /> },
   { path: `${process.env.REACT_APP_PUBLIC_URL}/`, Component: <SamplePage /> },
 
   // // Team members
