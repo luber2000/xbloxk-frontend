@@ -14,11 +14,11 @@ export const routes = [
   { path: `${process.env.REACT_APP_PUBLIC_URL}/`, Component: <SamplePage /> },
 
   // // Team members
-  { path: `${process.env.REACT_APP_PUBLIC_URL}/members/`, Component: <ListMembers /> },
-  { path: `${process.env.REACT_APP_PUBLIC_URL}/member/add/`, Component: <AddTeamMember /> },
+  { path: `${process.env.REACT_APP_PUBLIC_URL}/members`, Component: <ListMembers /> },
+  { path: `${process.env.REACT_APP_PUBLIC_URL}/member/add`, Component: <AddTeamMember /> },
   { path: `${process.env.REACT_APP_PUBLIC_URL}/member/edit/:userId`, Component: <EditMember /> },
-  { path: `${process.env.REACT_APP_PUBLIC_URL}/members-groups/`, Component: <TeamGroupPage /> },
-  { path: `${process.env.REACT_APP_PUBLIC_URL}/search-members/`, Component: <SearchMemberPage /> },
+  { path: `${process.env.REACT_APP_PUBLIC_URL}/members-groups`, Component: <TeamGroupPage /> },
+  { path: `${process.env.REACT_APP_PUBLIC_URL}/search-members`, Component: <SearchMemberPage /> },
 
   // // // Team members
   // { path: `${process.env.REACT_APP_PUBLIC_URL}/members/:layout`, Component: <ListMembers /> },

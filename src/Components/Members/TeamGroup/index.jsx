@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useContext, useState } from 'react';
 import { Card, CardHeader } from 'reactstrap';
-import { H4, Btn } from '../../../AbstractElements';
+import { H4, H5, Btn } from '../../../AbstractElements';
 import { Link, useNavigate } from 'react-router-dom';
 import '../../../assets/scss/xblock/member_group.css';
 import UsersGroupIcon from '../../../assets/images/svg-icon/users-group.svg'
@@ -12,7 +12,7 @@ const TeamGroup = () => {
   const { layoutURL } = useContext(CustomizerContext);
 
   const redirectToTeams = () => {
-    history(`${process.env.REACT_APP_PUBLIC_URL}/search-members/`);
+    history(`${process.env.REACT_APP_PUBLIC_URL}/search-members`);
   };
 
   const hrStyles = {
@@ -30,6 +30,7 @@ const TeamGroup = () => {
             <Btn attrBtn={{ className: `custom-btn badge-light-primary btn-mail w-100`, color: 'blue', onClick: redirectToTeams }}>
               Team
             </Btn>
+            {/* </Link> */}
           </div>
           <div className='custom-btn-team-group'>
             <Btn attrBtn={{ className: `custom-btn badge-light-primary btn-mail w-100`, color: 'blue' }}>

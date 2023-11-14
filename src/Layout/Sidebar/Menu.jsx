@@ -34,7 +34,7 @@ export const MENUITEMS = [
         icon: "team",
         type: "link",
         active: false,
-        path : `${process.env.REACT_APP_PUBLIC_URL}/members-groups/`
+        path : `${process.env.REACT_APP_PUBLIC_URL}/members-groups`
       },
       {
         title: "Tasks",
