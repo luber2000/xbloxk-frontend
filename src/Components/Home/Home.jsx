@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import VideoBg from '../../assets/video/Toque_Motion_2.mp4';
-import LoopIcon from '../../assets/images/home/loop-icon.svg';
+import LoopIcon from '../../assets/images/home/lobby.svg';
 import keyboardIcon from '../../assets/images/home/keyboard.svg';
 import meetingIcon from '../../assets/images/home/meeting.svg';
 import posterHome from '../../assets/images/home/Motion_2_PosterImage.png';

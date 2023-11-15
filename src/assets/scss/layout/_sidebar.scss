@@ -1263,7 +1263,8 @@
 
           .logo-wrapper,
           .logo-icon-wrapper {
-            padding: 27px 30px;
+            padding: 18px 30px;
+            height: 79px;
             box-shadow: -9px 0 20px rgba($semi-dark, 0.1);
           }
 
@@ -1282,6 +1283,7 @@
               .sidebar-links {
                 > li {
                   max-width: 86px;
+                  height: 50px;
                   margin: 0;
                   transition: all 0.3s ease;
                   .sidebar-submenu {
@@ -1344,8 +1346,8 @@
                     }
 
                     > a {
-                      padding: 12px 15px;
-                      transition: all 0.3s ease;
+                      padding: 20px 20px;
+                      transition: all 0s ease;
                       svg {
                         margin-right: 15px;
                       }
@@ -1445,9 +1447,6 @@
               transition: color 1s ease;
               overflow: auto;
               color: rgba(0, 0, 0, 0);
-              margin-top: 20px;
-              margin-bottom: 30px;
-
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -1588,7 +1587,7 @@
                 }
 
                 a {
-                  padding: 12px 20px;
+                  padding: 20px 20px;
                   position: relative;
                   color: #7366FF;
                   transition: all 0.3s ease;
@@ -2331,6 +2330,8 @@
 
             .sidebar-list {
               position: relative;
+              margin-top: 10px;
+              margin-bottom: 10px;
 
               .badge {
                 position: absolute;

@@ -1,21 +1,34 @@
 import React from 'react';
 import SearchIcon from '../../../assets/images/svg-icon/search-solid.svg';
 import UsersIcon from '../../../assets/images/svg-icon/users-group.svg';
-import MeetingIcon from '../../../assets/images/home/meeting.svg';
+
+import LobbyIcon from '../../../assets/images/home/sidebar/lobby.svg';
+import MeetingIcon from '../../../assets/images/home/sidebar/meeting.svg';
+import AnalyticsIcon from '../../../assets/images/home/sidebar/analytics.svg';
+import BlocksIcon from '../../../assets/images/home/sidebar/blocks.svg';
+import TeamIcon from '../../../assets/images/home/sidebar/team.svg';
+import TasksIcon from '../../../assets/images/home/sidebar/tasks.svg';
+import ToggleIcon from '../../../assets/images/home/sidebar/toggle.svg';
 
 const CustomSvgIcon = (props) => {
   const { iconId, ...res } = props;
 
   const assignIcon = () => {
     switch (iconId) {
+      case 'lobby':
+        return LobbyIcon;
       case 'meeting':
         return MeetingIcon;
-      case 'users':
-        return UsersIcon;
-      // Agrega más casos según los valores que necesites.
-      default:
-        // Puedes devolver un ícono por defecto o manejar el caso en función de tus necesidades.
-        return SearchIcon;
+      case 'analytics':
+        return AnalyticsIcon;
+      case 'blocks':
+        return BlocksIcon;
+      case 'team':
+        return TeamIcon;
+      case 'tasks':
+        return TasksIcon;
+      case 'toggle':
+        return ToggleIcon;
     }
   };
 

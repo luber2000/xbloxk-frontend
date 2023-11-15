@@ -1,0 +1,33 @@
+.custom-sidebar-link {
+  /* background-color: red !important; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-sidebar-link img {
+  /* background-color: blue !important; */
+  width: 25px;
+}
+
+
+.custom-sidebar-icon {
+  max-width: 50px;
+  /* background-color: yellowgreen; */
+}
+
+.custom-sidebar-text {
+  min-width: 100px;
+  /* background-color: aqua; */
+  margin-left: 20px;
+}
+/* 
+.custom-logo-wrapper {
+  background-color: red;
+  justify-content: center;
+} */
+
+.custom-logo-wrapper .close_icon {
+  background-color: aquamarine;
+}

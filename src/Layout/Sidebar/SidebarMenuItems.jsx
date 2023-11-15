@@ -2,9 +2,11 @@ import React, { Fragment, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import CustomSvgIcon from "../../Components/Common/Component/CustomSvgIcon";
+import CustomSvgIcon2 from "../../Components/Common/Component/CustomSvgIcon2";
 import SvgIcon from "../../Components/Common/Component/SvgIcon";
 import CustomizerContext from "../../_helper/Customizer";
 import { MENUITEMS } from "./Menu";
+import '../../assets/scss/layout/customsidebar.css';
 
 const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClass }) => {
   const { layout } = useContext(CustomizerContext);
@@ -81,11 +83,12 @@ const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClas
               )}
 
               {menuItem.type === "link" ? (
-                <Link to={menuItem.path} className={`sidebar-link sidebar-title link-nav  ${CurrentPath.includes(menuItem.title.toLowerCase()) ? "active" : ""}`} onClick={() => toggletNavActive(menuItem)}>
-                  <SvgIcon className="stroke-icon" iconId={`stroke-${menuItem.icon}`} />
-                  <SvgIcon className="fill-icon" iconId={`fill-${menuItem.icon}`} />
-                  <span>{t(menuItem.title)}</span>
-                  {menuItem.badge ? <label className={menuItem.badge}>{menuItem.badgetxt}</label> : ""}
+                <Link to={menuItem.path} className={`sidebar-link custom-sidebar-link sidebar-title link-nav  ${CurrentPath.includes(menuItem.title.toLowerCase()) ? "active" : ""}`} onClick={() => toggletNavActive(menuItem)}>
+                    <CustomSvgIcon className="stroke-icon custom-sidebar-icon" iconId={`${menuItem.icon}`} />
+                    {/* <SvgIcon className="stroke-icon" iconId={`stroke-${menuItem.icon}`} />
+                    <SvgIcon className="fill-icon" iconId={`fill-${menuItem.icon}`} /> */}
+                    <span className="custom-sidebar-text">{t(menuItem.title)}</span>
+                    {menuItem.badge ? <label className={menuItem.badge}>{menuItem.badgetxt}</label> : ""}
                 </Link>
               ) : (
                 ""
