@@ -25,15 +25,15 @@ const TeamGroup = () => {
     <Card>
       <div className='custom-tg-container'>
         <div className='team-group-page'>
-          <div className='custom-btn-team-group'>
+          <div className='custom-btn-searh-icon' onClick={redirectToTeams}>
             <img src={UsersGroupIcon} alt="Lobby SVG" />
-            <Btn attrBtn={{ className: `custom-btn badge-light-primary btn-mail w-100`, color: 'blue', onClick: redirectToTeams }}>
+            <Btn attrBtn={{ className: `custom-btn custom-btn-team w-100`, color: 'blue' }}>
               Team
             </Btn>
             {/* </Link> */}
           </div>
-          <div className='custom-btn-team-group'>
-            <Btn attrBtn={{ className: `custom-btn badge-light-primary btn-mail w-100`, color: 'blue' }}>
+          <div className='custom-btn-searh-icon'>
+            <Btn attrBtn={{ className: `custom-btn custom-btn-group w-100`, color: 'blue' }}>
               Groups
             </Btn>
           </div>

@@ -27,16 +27,29 @@
 
 .custom-btn-team-group:hover {
   color: #7366FF;
+  cursor: pointer;
 }
 
 .custom-btn {
   width: 110px !important;
 }
 
+.custom-btn-team {
+  color: white;
+  opacity: 70%;
+  width: 110px !important;
+}
+
+.custom-btn-group {
+  color: white;
+  opacity: 50%;
+  width: 110px !important;
+}
+
 .custom-line-tg {
   border-color: white;
   border-width: 2px;
-  width: 32%;
+  width: 40%;
 }
 
 hr {
@@ -51,12 +64,13 @@ hr {
 .custom-text-tg {
   color: white;
   text-align: right;
-  opacity: 1;
+  opacity: 50%;
   width: 32%;
 }
 
 .custom-text-tg p {
   text-align: right;
+  opacity: 1;
 }
 
 /* Search Team */
@@ -75,9 +89,25 @@ hr {
 
 .custom-search-member-input::placeholder {
   color: white;
+  opacity: 50%;
 }
 
 .custom-search-member-input:focus {
-  color: #1D1E26;
+  background-color: #1D1E26;
   color: white;
+}
+
+.custom-btn-searh-icon {
+  font-size: 40px;
+  height: 50px;
+  width: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-btn-searh-icon:hover {
+  color: #7366FF;
+  cursor: pointer;
 }

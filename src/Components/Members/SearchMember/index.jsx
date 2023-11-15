@@ -27,12 +27,12 @@ const SearchMember = () => {
     <Card>
       <div className='custom-tg-container'>
         <div className='search-team-page'>
-          <div className='custom-btn-team-group'>
+          <div className='custom-btn-searh-icon'>
             <img src={SearchIcon} alt="Search SVG" />
           </div>
           <Input className="custom-search-member-input" placeholder="Search by name or email"/>
           {/* <Input className="form-control custom-input-color" type="text" placeholder="Company" {...register("company", { required: true })} /><span style={{ color: "red" }}>{errors.company && 'Company is required'} </span> */}
-          <div className='custom-btn-team-group'>
+          <div className='custom-btn-searh-icon'>
             <img src={ListIcon} alt="List SVG" onClick={redirectToTeams} />
           </div>
         </div>
