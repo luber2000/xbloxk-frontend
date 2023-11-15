@@ -9,10 +9,9 @@
 
 .team-group-page {
   color: white;
-  width: 50%;
+  width: 40%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .custom-btn-team-group {

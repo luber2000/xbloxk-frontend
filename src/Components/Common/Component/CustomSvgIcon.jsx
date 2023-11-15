@@ -7,8 +7,12 @@ import BlocksIcon from '../../../assets/images/home/sidebar/blocks.svg';
 import TeamIcon from '../../../assets/images/home/sidebar/team.svg';
 import TasksIcon from '../../../assets/images/home/sidebar/tasks.svg';
 import ToggleIcon from '../../../assets/images/home/sidebar/toggle.svg';
+import BlockBoardIcon from '../../../../src/assets/images/home/sidebar/block-board.svg'
+import PlusIcon from '../../../../src/assets/images/home/sidebar/plus.svg'
+
 import SearchIcon from '../../../../src/assets/images/home/header/search.svg'
 import NotifyIcon from '../../../../src/assets/images/home/header/notify.svg'
+
 
 const CustomSvgIcon = (props) => {
   const { iconId, ...res } = props;
@@ -33,6 +37,10 @@ const CustomSvgIcon = (props) => {
         return SearchIcon;
       case 'notify':
         return NotifyIcon;
+      case 'block-board':
+        return BlockBoardIcon;
+      case 'plus':
+        return PlusIcon;
     }
   };
 

@@ -43,6 +43,20 @@ export const MENUITEMS = [
         active: false,
         path : `${process.env.REACT_APP_PUBLIC_URL}/#`
       },
+      {
+        title: "Block Board",
+        icon: "block-board",
+        type: "link",
+        active: false,
+        path : `${process.env.REACT_APP_PUBLIC_URL}/#`
+      },
+      {
+        title: "",
+        icon: "plus",
+        type: "link",
+        active: false,
+        path : `${process.env.REACT_APP_PUBLIC_URL}/#`
+      }
       // {
       //   title: "Users",
       //   icon: "user",
