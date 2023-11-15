@@ -1,7 +1,5 @@
 import React from 'react';
-import SearchIcon from '../../../assets/images/svg-icon/search-solid.svg';
 import UsersIcon from '../../../assets/images/svg-icon/users-group.svg';
-
 import LobbyIcon from '../../../assets/images/home/sidebar/lobby.svg';
 import MeetingIcon from '../../../assets/images/home/sidebar/meeting.svg';
 import AnalyticsIcon from '../../../assets/images/home/sidebar/analytics.svg';
@@ -9,6 +7,8 @@ import BlocksIcon from '../../../assets/images/home/sidebar/blocks.svg';
 import TeamIcon from '../../../assets/images/home/sidebar/team.svg';
 import TasksIcon from '../../../assets/images/home/sidebar/tasks.svg';
 import ToggleIcon from '../../../assets/images/home/sidebar/toggle.svg';
+import SearchIcon from '../../../../src/assets/images/home/header/search.svg'
+import NotifyIcon from '../../../../src/assets/images/home/header/notify.svg'
 
 const CustomSvgIcon = (props) => {
   const { iconId, ...res } = props;
@@ -29,6 +29,10 @@ const CustomSvgIcon = (props) => {
         return TasksIcon;
       case 'toggle':
         return ToggleIcon;
+      case 'search':
+        return SearchIcon;
+      case 'notify':
+        return NotifyIcon;
     }
   };
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SvgIcon from '../../../Components/Common/Component/SvgIcon';
-import './Searchbar.css'; 
+import CustomSvgIcon from "../../../Components/Common/Component/CustomSvgIcon";
+import '../../../../src/assets/scss/layout/header.css'; 
 
 const Searchbar = () => {
   const [searchresponsive, setSearchresponsive] = useState(false);
@@ -17,8 +18,9 @@ const Searchbar = () => {
 
   return (
     <li>
-      <span className='header-search'>
-      <SvgIcon iconId='search' className='white-icon'/>
+      <span className='header-search custom-header-icons'>
+      {/* <SvgIcon iconId='search' className='white-icon'/> */}
+      <CustomSvgIcon className="stroke-icon custom-header-icon" iconId={`search`} />
         {/* <SvgIcon iconId='search' onClick={() => SeacrhResposive(searchresponsive)} /> */}
       </span>
     </li>

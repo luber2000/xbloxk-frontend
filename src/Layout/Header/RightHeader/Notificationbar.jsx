@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import SvgIcon from '../../../Components/Common/Component/SvgIcon';
 import { CHECKALL, DeliveryComplete, DeliveryProcessing, Notification, OrderComplete, TicketsGenerated } from '../../../Constant';
+import CustomSvgIcon from "../../../Components/Common/Component/CustomSvgIcon";
+import '../../../../src/assets/scss/layout/header.css'; 
 
 const Notificationbar = () => {
   const [notificationDropDown, setNotificationDropDown] = useState(false);
@@ -10,7 +12,8 @@ const Notificationbar = () => {
       <div className='notification-box' onClick={() => setNotificationDropDown(!notificationDropDown)}>
         {/* <SvgIcon iconId='notification' />
         <span className='badge rounded-pill badge-secondary'>4</span> */}
-        <SvgIcon iconId='notification' className='white-icon'/>
+        {/* <SvgIcon iconId='notification' className='white-icon'/> */}
+        <CustomSvgIcon className="stroke-icon custom-header-icon" iconId={`notify`} />
       </div>
       {/* <div className={`notification-dropdown onhover-show-div ${notificationDropDown ? 'active' : ''}`}>
         <h6 className='f-18 mb-0 dropdown-title'>{Notification}</h6>
