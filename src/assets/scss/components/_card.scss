@@ -34,12 +34,12 @@
   }
 
   .card-header {
-    background-color: $card-header-bg-color;
-    color: $white;
+    background-color: #262932;//$card-header-bg-color;
+    color: #A7A8AC; //$white;
     padding: $card-padding;
-    border-bottom: $card-border-color;
-    border-top-left-radius: $card-border-radious;
-    border-top-right-radius: $card-border-radious;
+    // border-bottom: $card-border-color;
+    // border-top-left-radius: $card-border-radious;
+    // border-top-right-radius: $card-border-radious;
     position: relative;
 
     &.card-no-border {

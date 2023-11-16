@@ -8,8 +8,10 @@ import UsersGroupIcon from '../../../assets/images/svg-icon/users-group.svg';
 import SearchIcon from '../../../assets/images/svg-icon/search-solid.svg';
 import CustomizerContext from "../../../_helper/Customizer";
 import ListIcon from '../../../assets/images/svg-icon/list-solid.svg';
+import AddTeamMemberButton from '../ListMembers/AddTeamMemberButton';
 
 const SearchMember = () => {
+  const [users, setUsers] = useState([]);
   const history = useNavigate();
   const { layoutURL } = useContext(CustomizerContext);
 
@@ -25,6 +27,11 @@ const SearchMember = () => {
 
   return (
     <Card>
+      <div className='right-align'>
+        <AddTeamMemberButton empty={users.length > 0 ? false : true}>
+          <b>Add Team Member</b>
+        </AddTeamMemberButton>
+      </div>
       <div className='custom-tg-container'>
         <div className='search-team-page'>
           <div className='custom-btn-searh-icon'>

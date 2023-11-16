@@ -8,6 +8,7 @@ import { Row, Col, Modal, ModalHeader, ModalBody, Label, Input, FormGroup, Form 
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
 import CustomizerContext from "../../../_helper/Customizer";
+import "../../../../src/assets/scss/layout/customeraddmember.css";
 
 const AddTeamMemberButton = () => {
   const history = useNavigate();
@@ -26,14 +27,19 @@ const AddTeamMemberButton = () => {
 
   return (
     <Fragment>
-      <Btn attrBtn={{ className: `badge-light-primary btn-mail w-100`, color: 'blue', onClick: redirectToProfileEdit }}>
-        <Users className='me-2' />
-        {AddTeamMember}
-      </Btn>
-      <span className="vertical-bar">|</span>
-      <Btn attrBtn={{ className: `badge-light-primary btn-mail w-100`, color: 'blue' }}>
-        Sync Team
-      </Btn>
+      <div className='add-member-buttons'>
+        <Btn attrBtn={{ className: `text-add-member-button badge-light-primary btn-mail w-100`, color: 'blue', onClick: redirectToProfileEdit }}>
+          <Users className='me-2' />
+          {AddTeamMember}
+        </Btn>
+        <div className='vertical-bar'>
+          <span className="">|</span>
+        </div>
+        <Btn attrBtn={{ className: `text-add-member-button sync-team-text badge-light-primary btn-mail w-100`, color: 'blue' }}>
+          Sync Team
+        </Btn>
+      </div>
+      
     </Fragment>
   );
 };

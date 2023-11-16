@@ -30,36 +30,38 @@ const UsersList = () => {
     <Card>
       <div className='right-align'>
         <AddTeamMemberButton empty={users.length > 0 ? false : true}>
-          <b>Add Team Member</b>
+          <b>Add Team Member</b>s
         </AddTeamMemberButton>
       </div>
       <CardHeader>
         <H4>Team members list</H4>
-      </CardHeader>
-      <div className='table-responsive'>
-        <table className='table'>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Last Name</th>
-              <th>Email</th>
+        <div className='table-responsive'>
+        <table className="table" style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} >
+          <thead style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} >
+            <tr style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} >
+              <th style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} ><input type="checkbox" id="" name="" value=""/> </th>
+              <th style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} >Name</th>
+              <th style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} >Last Name</th>
+              <th style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} >Email</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} >
             {users.map((user, index) => (
-              <tr key={user.id}>
-                <td>
+              <tr key={user.id} style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }} >
+                <td style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }}><input type="checkbox" id="" name="" value=""/> </td>
+                <td style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }}>
                   <Link to={`${process.env.REACT_APP_PUBLIC_URL}/member/edit/${user.id}`}>
                     {user.first_name}
                   </Link>
-                </td>
-                <td>{user.last_name}</td>
-                <td>{user.email}</td>
+                </td >
+                <td style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }}>{user.last_name}</td>
+                <td style={{ backgroundColor: '#313C4C', color: '#A7A8AC' }}>{user.email}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      </CardHeader>
     </Card>
   );
 };
