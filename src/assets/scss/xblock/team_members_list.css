@@ -1,0 +1,128 @@
+.right-align {
+  display: flex;
+  justify-content: end;
+  background-color: #1D1E26;
+  height: 70px;
+}
+
+.right-align button {
+  max-width: 250px;
+  color: white;
+  background-color: #1D1E26;
+}
+
+/* HEADER PAGE */
+.team-member-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 78px;
+  margin: 0 60px 0 60px;
+}
+
+.team-member-back {
+  font: normal normal medium 16px/21px Roboto;
+  text-align: left;
+  color: white;
+  margin: 0 60px 0 60px;
+}
+
+/* PAGE*/
+
+.team-member-list {
+  background: #262932 0% 0% no-repeat padding-box;
+  border: 2px solid #313C4C;
+  border-radius: 18px;
+  padding: 0px 49px 43px 49px;
+  margin: 0 60px 0 60px;
+  opacity: 1;
+}
+
+.team-member-list-title {
+  text-align: left;
+  font: normal normal 600 20px/27px Open Sans;
+  letter-spacing: 1px;
+  padding-top: 28px;
+  padding-bottom: 31px;
+  color: #A7A8AC;
+  opacity: 1;
+}
+
+/* Estilo para el encabezado */
+.header-row {
+  background-color: #262932;
+  color: white;
+  height: 92px; 
+  font-size: 16px;
+}
+
+/* Estilo para filas impares */
+.fila-impar {
+  background-color: #262932;
+  height: 68px;
+  font-size: 16px;
+}
+
+/* Estilo para filas pares */
+.fila-par {
+  background-color: #1D1E26;
+  height: 68px;
+  font-size: 16px;
+}
+
+/* Otras propiedades de estilo para la tabla */
+.tabla-container {
+  width: 100%;
+  padding: 0;
+  border: 2px solid #313C4C;
+  border-radius: 9px;
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: none;
+  color: #A7A8AC;
+  font: normal normal 600 16px/22px Open Sans;
+}
+
+
+/* Estilo para las celdas del encabezado */
+th {
+  background-color: #262932;
+  color: #A7A8AC;
+}
+
+/* Estilo para los checkboxes */
+.the-checkbox-th {
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.the-checkbox-td{
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+/* Estilo para la imagen */
+td img {
+  width: 23.47px;
+  height: 23.47px;
+  margin-right: 8px;
+}

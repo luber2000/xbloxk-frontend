@@ -261,8 +261,8 @@ $sidebar-arrow-color: $theme-body-font-color;
 $sidebar-open-icon: "\f107";
 $sidebar-close-icon: "\f105";
 $sidebar-icon-font-family: $font-awesome;
-$sidebar-height: calc(100vh - 115px);
-$sidebar-compact-width: 265px;
+$sidebar-height: calc(100vh - 0px);
+$sidebar-compact-width: 202px;
 
 //Header settings
 $main-header-position: fixed;
@@ -291,7 +291,7 @@ $breadcrumb-content: "/";
 $header-left-bg-color: $white;
 $main-header-padding: 27px 22px;
 $main-header-z-index: 8;
-$header-wrapper-padding: 22px 30px;
+$header-wrapper-padding: 10px 12px;
 $header-wrapper-nav-right: 0px;
 $header-wrapper-nav-icon-size: 20px;
 $header-wrapper-nav-icon-color: $theme-font-color;

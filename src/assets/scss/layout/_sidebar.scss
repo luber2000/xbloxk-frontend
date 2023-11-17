@@ -1232,8 +1232,8 @@
       width: calc(100% - #{$sidebar-compact-width});
 
       &.close_icon {
-        margin-left: 90px;
-        width: calc(100% - 90px);
+        margin-left: 58px;
+        width: calc(100% - 58px);
       }
 
       .header-wrapper {
@@ -1256,16 +1256,16 @@
           height: auto;
           line-height: inherit;
           background: $sidebar-background-color;
-          width: $sidebar-compact-width;
+          width: 202px;
           text-align: left;
           transition: 0.3s;
-          box-shadow: 0 0 21px 0 rgba($semi-dark, 0.1);
+          // box-shadow: 0 0 21px 0 rgba($semi-dark, 0.1);
 
           .logo-wrapper,
           .logo-icon-wrapper {
             padding: 18px 30px;
             height: 79px;
-            box-shadow: -9px 0 20px rgba($semi-dark, 0.1);
+            // box-shadow: -9px 0 20px rgba($semi-dark, 0.1);
           }
 
           .logo-icon-wrapper {
@@ -1317,7 +1317,7 @@
             }
 
             &:hover {
-              width: 265px;
+              width: $sidebar-compact-width;
               transition: all 0.3s ease;
 
               .badge {
@@ -1390,7 +1390,7 @@
 
             .sidebar-main {
               .sidebar-links {
-                height: calc(100vh - 118px);
+                height: calc(100vh);
 
                 > li {
                   .sidebar-link {
@@ -1444,7 +1444,7 @@
               height: $sidebar-height;
               left: -300px;
               z-index: 99;
-              transition: color 1s ease;
+              transition: color 5s ease;
               overflow: auto;
               color: rgba(0, 0, 0, 0);
               display: flex;

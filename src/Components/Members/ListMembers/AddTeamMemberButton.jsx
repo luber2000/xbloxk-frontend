@@ -8,7 +8,8 @@ import { Row, Col, Modal, ModalHeader, ModalBody, Label, Input, FormGroup, Form 
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
 import CustomizerContext from "../../../_helper/Customizer";
-import "../../../../src/assets/scss/layout/customeraddmember.css";
+import "../../../../src/assets/scss/xblock/customeraddmember.css";
+import AddMemberIcon from "../../../../src/assets/images/member/users-group.svg"
 
 const AddTeamMemberButton = () => {
   const history = useNavigate();
@@ -28,9 +29,9 @@ const AddTeamMemberButton = () => {
   return (
     <Fragment>
       <div className='add-member-buttons'>
-        <Btn attrBtn={{ className: `text-add-member-button badge-light-primary btn-mail w-100`, color: 'blue', onClick: redirectToProfileEdit }}>
-          <Users className='me-2' />
-          {AddTeamMember}
+        <Btn attrBtn={{ className: `text-add-member-button`, color: 'blue', onClick: redirectToProfileEdit }}>
+          <img src={AddMemberIcon} alt="Icono" width="28px" height="28px" />
+          Add team member
         </Btn>
         <div className='vertical-bar'>
           <span className="">|</span>

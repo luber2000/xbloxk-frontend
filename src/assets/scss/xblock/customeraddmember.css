@@ -1,0 +1,59 @@
+.add-member-buttons {
+  display: flex; /* Usa Flexbox para el contenedor */
+  align-items: center; /* Centra verticalmente el contenido de los elementos */
+}
+
+.text-add-member-button {
+  display: flex; /* Continúa usando Flexbox */
+  align-items: center; /* Centra verticalmente el contenido */
+  width: 524px; /* Establece el ancho del botón */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier parte del texto que se desborde */
+  text-overflow: ellipsis; /* Añade elipsis si el texto se desborda */
+  font: normal normal medium 16px/21px Roboto;
+  letter-spacing: 1.6px;
+}
+
+.vertical-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* .add-member-buttons {
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 560px;
+  display: flex;
+  font-size: 30px;
+  align-content: center;
+  justify-content: center;
+} */
+/* 
+.vertical-bar {
+  color: white;
+  opacity: 10%;  
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.vertical-bar span {
+  font-weight: bold;
+  border: 2px solid #3F3F3F;
+  opacity: 10%;
+}
+
+/* .text-add-member-button {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;  
+} */
+
+.sync-team-text {
+  font-weight: bold;
+  opacity: 10%;
+}
